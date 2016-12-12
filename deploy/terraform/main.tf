@@ -37,7 +37,7 @@ module "simple-clock" {
   
   # things we need to know about the app
   app_name = "${var.app_name}"
-  ami_id = "${data.aws_ami.pathfinder-character-tool.image_id}"
+  ami_id = "${data.aws_ami.simple-clock.image_id}"
   dns_names = ["${var.subdomain}.opslab.xyz.", "api.${var.subdomain}.opslab.xyz."]
   instance_type="${var.instance_type}"
   instance_count="${var.instance_count}"
