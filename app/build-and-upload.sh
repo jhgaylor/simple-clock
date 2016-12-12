@@ -1,6 +1,6 @@
 #!/bin/sh
 
-APP_NAME="simple-clock"
+APP_NAME="clock"
 SW_RELEASE_BUCKET="jhg-sw-releases"
 SOURCE_DIR="./app"
 APP_VERSION=$(node -p -e "require('${SOURCE_DIR}/package.json').version")
